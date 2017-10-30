@@ -1,0 +1,95 @@
+package lesson3;
+
+import java.util.Scanner;
+
+public class HomeWork3Two {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int number;
+
+		System.out.println("Enter number of apartmant");
+
+		number = sc.nextInt();
+
+		if ((number > 0) && (number < 37)) { // determine the front door number
+
+			System.out.print("Apartment in the first front door");
+
+		} else if ((number > 36) && (number < 73)) {
+
+			System.out.print("Apartment in the second front door");
+		} else if ((number > 72) && (number < 109)) {
+
+			System.out.print("Apartment in the third front door");
+		} else if ((number > 108) && (number < 145)) {
+
+			System.out.print("Apartment in the fourth front door");
+
+		} else {
+			System.out.println("Wrong number of apartment");
+		}
+		if (number == 0) {
+
+		} else {
+			switch ((number - 1) / 4) { // determine the floor number
+			case 0:
+			case 9:
+			case 18:
+			case 27:
+				System.out.println(" and 1th floor");
+				break;
+			case 1:
+			case 10:
+			case 19:
+			case 28:
+				System.out.println(" and 2th floor");
+				break;
+			case 2:
+			case 11:
+			case 20:
+			case 29:
+				System.out.println(" and 3th floor");
+				break;
+			case 3:
+			case 12:
+			case 21:
+			case 30:
+				System.out.println(" and 4th floor");
+				break;
+			case 4:
+			case 13:
+			case 22:
+			case 31:
+				System.out.println(" and 5th floor");
+				break;
+			case 5:
+			case 14:
+			case 23:
+			case 32:
+				System.out.println(" and 6th floor");
+				break;
+			case 6:
+			case 15:
+			case 24:
+			case 33:
+				System.out.println(" and 7th floor");
+				break;
+			case 7:
+			case 16:
+			case 25:
+			case 34:
+				System.out.println(" and 8th floor");
+				break;
+			case 8:
+			case 17:
+			case 26:
+			case 35:
+				System.out.println(" and 9 floor");
+				break;
+			}
+		}
+	}
+}
