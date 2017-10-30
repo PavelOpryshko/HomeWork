@@ -1,0 +1,23 @@
+package lesson3;
+
+import java.util.Scanner;
+
+public class HomeWork3Five {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter X coordinate ");
+		double x = sc.nextInt();
+
+		System.out.println("Enter Y coordinate ");
+		double y = sc.nextInt();
+
+		if (x >= -4 && x <= 4 && y >= -4 && y <= 4) {
+			System.out.println("You hit the circle");
+		} else {
+			System.out.println("You didn`t hit the circle, try again");
+		}
+		sc.close();
+	}
+}
